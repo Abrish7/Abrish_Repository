@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <EditText
+        android:id="@+id/fnameId"
+        android:layout_marginTop="5dp"
+        android:layout_width="250dp"
+        android:layout_marginLeft="70dp"
+        android:hint="First Name"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/lnameId"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fnameId"
+        android:hint="Last Name"
+        android:layout_marginTop="5dp"
+        android:layout_width="250dp"
+        android:layout_marginLeft="70dp"
+        android:textAlignment="center" />
+
+
+
+
+<EditText
+    android:id="@+id/unameId"
+    android:layout_marginTop="5dp"
+    android:layout_width="250dp"
+    android:layout_marginLeft="70dp"
+    android:layout_height="wrap_content"
+    android:hint="User Name"
+    android:textAlignment="center"
+    android:layout_below="@+id/lnameId"
+    />
+
+<EditText
+    android:id="@+id/emailId"
+    android:layout_marginTop="5dp"
+    android:layout_width="250dp"
+    android:layout_marginLeft="70dp"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:hint="Email"
+    android:layout_below="@+id/radioGId"
+    />
+
+<EditText
+    android:id="@+id/phoneId"
+    android:layout_height="wrap_content"
+    android:hint="Phone"
+    android:textAlignment="center"
+    android:layout_marginTop="5dp"
+    android:layout_width="250dp"
+    android:layout_marginLeft="70dp"
+    android:layout_below="@+id/emailId"
+    />
+
+
+    <EditText
+        android:id="@+id/passId"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@+id/phoneId"
+        android:layout_marginTop="5dp"
+        android:layout_width="250dp"
+        android:layout_marginLeft="70dp"
+        android:password="true"
+        android:textAlignment="center" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unameId"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/cardview_default_radius"
+        android:id="@+id/radioGId">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sex: "
+            android:textAlignment="center"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/maleId"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/femaleId"
+            android:text="Female"/>
+
+    </RadioGroup>
+
+
+<Button
+    android:id="@+id/regBtnId"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/passId"
+    android:text="Register"
+    android:background="@color/dark_blue"
+    android:textColor="#fff"
+    android:layout_marginTop="25dp"
+    android:textSize="20dp"
+    android:layout_centerInParent="true"
+    />
+
+    <Button
+        android:id="@+id/rgLgBtnId"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regBtnId"
+        android:layout_marginTop="15dp"
+        android:background="@color/dark_blue"
+        android:textColor="#fff"
+        android:text="Back to Login"
+        android:layout_centerInParent="true"
+        android:textSize="20dp" />
+
+</RelativeLayout>
+</ScrollView>
